@@ -1,0 +1,526 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    {% include "includes/header_tags.html" %}
+</head>
+<!-- Body Start -->
+
+<body>
+<!-- Header Top -->
+<!-- End Header Top -->
+<div class="header-top-fixed one-page-nav">
+    <div class="container">
+        <!-- Brand -->
+        <div class="logo">
+            <a class="navbar-brand" href="#">
+                <img class="logo-dark" title="" alt="" src="{% static 'img/namelogo.png' %}">
+                <img class="logo-light" title="" alt="" src="{% static 'img/whitenamelogo.png' %}">
+            </a>
+        </div>
+        <!-- / -->
+        <ul class="main-menu">
+            <li>
+                <a data-scroll-nav="0" href="#home">
+                        <span class="m-icon">
+                            <i class="bi-house-door"></i>
+                        </span>
+                    <span class="m-text">خانه</span>
+                </a>
+            </li>
+            <li>
+                <a data-scroll-nav="1" href="#services">
+                        <span class="m-icon">
+                            <i class="bi-person"></i>
+                        </span>
+                    <span class="m-text">درباره ما</span>
+                </a>
+            </li>
+            <li>
+                <a data-scroll-nav="2" href="#services">
+                        <span class="m-icon">
+                            <i class="bi-briefcase"></i>
+                        </span>
+                    <span class="m-text">خدمات</span>
+                </a>
+            </li>
+            <li>
+                <a data-scroll-nav="3" href="#work">
+                        <span class="m-icon">
+                            <i class="bi-columns"></i>
+                        </span>
+                    <span class="m-text">نمونه کار</span>
+                </a>
+            </li>
+            <li>
+                <a data-scroll-nav="4" href="#contactus">
+                        <span class="m-icon">
+                            <i class="bi-telephone"></i>
+                        </span>
+                    <span class="m-text">تماس با ما</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Top Menu -->
+        <div class="d-flex">
+            <div class="theme-btn dropdown">
+                <button class="btn dropdown-toggle" id="bd-theme" type="button" aria-expanded="false"
+                        data-bs-toggle="dropdown" data-bs-display="static">
+                        <span class="bi my-1 theme-icon-active">
+                            <i class="bi-circle-half"></i>
+                        </span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme"
+                    style="--bs-dropdown-min-width: 8rem;">
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center"
+                                data-bs-theme-value="light">
+                                <span class="bi me-2 opacity-50 theme-icon">
+                                    <i class="bi-sun-fill"></i>
+                                </span>
+                            روشن
+                            <span class="bi ms-auto d-none">
+                                    <i class="bi-check2"></i>
+                                </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center"
+                                data-bs-theme-value="dark">
+                                <span class="bi me-2 opacity-50 theme-icon">
+                                    <i class="bi-moon-stars-fill"></i>
+                                </span>
+                            تاریک
+                            <span class="bi ms-auto d-none">
+                                    <i class="bi-check2"></i>
+                                </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center active"
+                                data-bs-theme-value="auto">
+                                <span class="bi me-2 opacity-50 theme-icon">
+                                    <i class="bi-circle-half"></i>
+                                </span>
+                            اتوماتیک
+                            <span class="bi ms-auto d-none">
+                                    <i class="bi-check2"></i>
+                                </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="ms-2 d-lg-none">
+                <button class="toggler-menu">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <!-- / -->
+    </div>
+</div>
+<!-- Main -->
+<main class="wrapper">
+    <!-- Home -->
+    <section id="home" data-scroll-index="0" class="home-section-02">
+        <div class="ef-1"></div>
+        <div class="ef-2"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-lg-6 ps-xl-5 mb-5 mb-lg-0">
+                    <div class="home-intro">
+                        <h6><img class="hand-wave" src="{% static 'img/hand-wave.svg' %}" alt="hand"> سلام، من</h6>
+                        <h1>امیرحسین شیرازی هستم</h1>
+                        <h2>من یک <span id="type-it"></span></h2>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="home-image">
+                                <img src="{% static 'img/home-banner1.jpg' %}" title="" alt="">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="home-image home-image-02">
+                                <img src="{% static 'img/about-banner1.jpg' %}" title="" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Home -->
+    <!-- About -->
+    <section id="about" data-scroll-index="1" class="section about-section gray-bg-1">
+        <div class="container">
+            <div class="about-me">
+                <div class="row align-items-start">
+                    <div class="col-lg-5 pb-4 pb-lg-0">
+                        <div class="title-01">
+                            <span>درباره من</span>
+                        </div>
+                        <div class="about-me-text pb-5">
+                            <h3>من امیرحسین شیرازی هستم</h3>
+                            <h5><span>من برای پروژه بعدی شما</span> در دسترس هستم</h5>
+                            <p>متولد 1383، ساکن در شیراز. من از زمان کودکی علاقه مند به کامپیوتر شدم و این علاقه تا جایی ادامه دار شد که امروز من داشجوی رشته مهندسی کامپیوتر هستم و در حوزه IT و برنامه نویسی فعالیت میکنم.</p>
+                                                            <div class="row pt-2">
+                                    <div class="col-auto">
+                                        <div class="a-count">
+                                            <span class="count">30</span>
+                                            <div class="a-count-text">پروژه های <br>تکمیل شده.</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <div class="a-count">
+                                            <span class="count">28</span>
+                                            <div class="a-count-text">مشتریان <br>راضی.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="title-01 mt-5">
+                                <span>تجربه</span>
+                            </div>
+                            <div class="resume-box">
+                                <ul>
+                                    <li>
+                                        <div class="icon">
+                                            <i class="fas fa-briefcase"></i>
+                                        </div>
+                                        <span class="time">1402 - زمان حال</span>
+                                        <h5>برنامه نویسی به صورت FreeLancing</h5>
+                                        <p>کار با افراد مختلف و متخصص در حوزه های مختلف در داخل و خارج از کشور.</p>
+                                    </li>
+                                </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 sticky-lg-top ps-xl-5">
+                        <div class="row align-items-start">
+                            <div class="col-md-7 py-4">
+                                <div class="about-me-img">
+                                    <img src="{% static 'img/about-banner1.jpg' %}" title="" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-5 py-4">
+                                <div class="about-content">
+                                    <ul>
+                                        <li>
+                                            <div class="a-icon">
+                                                <i class="fab fa-paypal"></i>
+                                            </div>
+                                            <div class="a-text">
+                                                <a target="_blank" rel="noopener" class="text-reset stretched-link" href="https://zarinp.al/shirazidev">زرین لینک</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="a-icon">
+                                                <i class="fa fa-envelope"></i>
+                                            </div>
+                                            <div class="a-text">
+                                                <a class="text-reset stretched-link" href="mailto:ashzih2@gmail.com">بهم ایمیل بزن</a>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="a-icon">
+                                                <i class="fa-solid fa-file-pdf"></i>
+                                            </div>
+                                            <div class="a-text">
+                                                <a target="_blank" rel="noopener" class="text-reset stretched-link" href="/static/docs/rezome.pdf">رزومه</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 py-4">
+                                <div class="title-01">
+                                    <span>مهارت ها</span>
+                                </div>
+                                <div class="skills">
+                                    <div class="skill-lt">
+                                        <h6 class="dark-color">Django</h6>
+                                        <div class="skill-bar">
+                                            <div class="skill-bar-in" role="progressbar" aria-valuenow="92"
+                                                 aria-valuemin="0" aria-valuemax="100">
+                                                <span>92%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-lt">
+                                        <h6 class="dark-color">HTML/CSS</h6>
+                                        <div class="skill-bar">
+                                            <div class="skill-bar-in" role="progressbar" aria-valuenow="52"
+                                                 aria-valuemin="0" aria-valuemax="100">
+                                                <span>52%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-lt">
+                                        <h6 class="dark-color">UI/UX</h6>
+                                        <div class="skill-bar">
+                                            <div class="skill-bar-in" role="progressbar" aria-valuenow="15"
+                                                 aria-valuemin="0" aria-valuemax="100">
+                                                <span>15%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-lt">
+                                        <h6 class="dark-color">وردپرس</h6>
+                                        <div class="skill-bar">
+                                            <div class="skill-bar-in" role="progressbar" aria-valuenow="91"
+                                                 aria-valuemin="0" aria-valuemax="100">
+                                                <span>91%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About -->
+    <!-- Services -->
+    <section id="services" data-scroll-index="2" class="section services-section">
+        <div class="container">
+            <div class="section-heading">
+                <h3>
+                    <span>خدمات من</span>
+                </h3>
+            </div>
+            <div class="row gy-4">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box-01">
+                        <div class="icon"><i class="bi bi-phone"></i></div>
+                        <div class="feature-content">
+                            <h5>توسعه وب جنگو</h5>
+                            <p>جنگو یکی از فریم ورک‌های مبتنی بر وب و سطح بالا در پایتون است  که مبتنی بر معماری (Model-View-Template) یا MVT می‌باشد. این فریمورک دارای امنیت بسیار بالایی می باشد و با استفاده از آن وب سایت هایی از جمله اینستاگرام و یوتوب و ... توسعه یافته اند.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box-01">
+                        <div class="icon"><i class="bi bi-laptop"></i></div>
+                        <div class="feature-content">
+                            <h5>وردپرس</h5>
+                            <p>وردپرس یک نرم‌افزار متن باز است که شما می‌توانید از آن جهت ساخت یک وب سایت زیبا، بلاگ، یا برنامه کاربردی موبایل استفاده نمایید. برای توسعه وب خیلی خوب و کم هزینه است اما کارآیی و قابلیت هایی که پایتون و جنگو به شما میدهند ، در فریم ورک و خیلی از زبان های دیگر دست نیافتنی است.</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Services -->
+
+    <!-- portfolio -->
+
+    <section id="portfolio" data-scroll-index="3" class="section portfolio-section gray-bg-1">
+        <div class="container">
+            <div class="section-heading">
+                <h3>
+                    <span>نمونه کار های من</span>
+                </h3>
+            </div>
+            <div class="lightbox-gallery">
+                <div class="row g-3 g-lg-4 portfolio-content reverse-order">
+                    {% for project in projects %}
+                        <div class="col-sm-6 col-lg-4 grid-item">
+                            <div class="portfolio-box">
+                                <div class="portfolio-text">
+                                    <h6>{{ project.title }}</h6>
+                                    <p>{{ project.desc }}</p>
+                                    <a class="gallery-link"  href="{{ project.image.url }}"><i
+                                            class="bi-arrow-up-left-circle"></i></a>
+                                </div>
+                                <div class="portfolio-img">
+                                    <img src="{{ project.image.url }}" title="" alt="">
+                                    <a class="px_modal portfolio-modal-link" href="{{ project.link }}">
+                                        <i class="fa fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- End portfolio -->
+    <!-- Testimonials -->
+    <section class="section testimonials-section">
+        <div class="container">
+            <div class="section-heading">
+                <h3>
+                    <span>گواهینامه ها</span>
+                </h3>
+            </div>
+            <div class="owl-carousel" data-items="3" data-nav-dots="true" data-lg-items="3" data-md-items="2"
+                 data-sm-items="1.5" data-xs-items="1" data-space="24" data-autoplay="false">
+                <div class="testimonials-box">
+                    <div class="t-lead">
+                        <img src="static/img/jadi.jpg" title="" alt="">
+                    </div>
+                    <div class="t-text">
+                        <h5>دوره پایتون مقدماتی و پیشرفته</h5>
+                        <p>“زبان برنامه‌نویسی پایتون (python)”</p>
+                        <div class="t-avatar">
+                            <h6>جادی میرمیرانی</h6>
+                            <a href="https://maktabkhooneh.org/" target="_blank" rel="noopener noreferrer">
+                                <span>مکتب خونه</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-box">
+                    <div class="t-lead">
+                        <img src="static/img/new-logo.png" title="" alt="">
+                    </div>
+                    <div class="t-text">
+                        <h5>متخصص پایتون</h5>
+                        <p>“دارای مدرک متخصص پایتون از مکتب خونه”</p>
+                        <div class="t-avatar">
+                            <h6>جادی میرمیرانی، علی بیگدلی، محمدرضا کریمی نژاد</h6>
+                            <a href="https://maktabkhooneh.org/" target="_blank" rel="noopener noreferrer">
+                                <span>مکتب خونه</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-box">
+                    <div class="t-lead">
+                        <img src="static/img/amiri.jpg" title="" alt="">
+                    </div>
+                    <div class="t-text">
+                        <h5>دوره فریمورک جنگو(Django)</h5>
+                        <p>“فریمورک توانای جنگو بر پایه پایتون”</p>
+                        <div class="t-avatar">
+                            <h6>امیرحسین امیری</h6>
+                            <a href="https://www.codeyad.com/" target="_blank" rel="noopener noreferrer">
+                                <span>کدیاد</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonials -->
+    <!-- contactus -->
+    <section id="contactus" data-scroll-index="4" class="section contactus-section gray-bg-1">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-5 d-flex">
+                    <div class="d-flex flex-column w-100">
+                        <div class="contact-info">
+                            <h3>بیایید تا پروژه شما را مورد بحث قرار دهیم</h3>
+                            <ul>
+                                <li>
+                                    <div class="icon">
+                                        <i class="bi-chat-left-dots-fill"></i>
+                                    </div>
+                                    <div class="text">
+                                        <label>با من در ارتباط باشید</label>
+                                        <p>من برای کمک به شما اینجا هستم. <span><a class="text-reset"
+                                                                                    href="mailto:info@shirazidev.ir">info@shirazidev.ir</a></span>
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 ps-xl-5">
+                    <div class="contact-form">
+                        <div class="contact-head">
+                            <h4>با من در تماس باشید.</h4>
+                            <p>درباره خودتان و پروژه هایتان برای من بنویسید.</p>
+                        </div>
+                        <form id="contact-form" method="POST">
+                            {% csrf_token %}
+                            <div class="row gx-3 gy-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">اسم کوچک</label>
+                                        <input name="name" id="name" placeholder="اسم *" class="form-control"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">ایمیل شما</label>
+                                        <input name="email" id="email" placeholder="ایمیل *" class="form-control"
+                                               type="email">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label class="form-label">موضوع</label>
+                                        <input name="subject" id="subject" placeholder="موضوع *"
+                                               class="form-control"
+                                               type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="form-label">پیام شما</label>
+                                        <textarea name="text" id="message" placeholder="پیام شما *" rows="4"
+                                                  class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="send">
+                                        <button class="px-btn w-100" type="submit" value="Send">ارسال پیام</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End contactus -->
+</main>
+<!-- Main -->
+{##}
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-info">
+            <div class="footer-avatar">
+                <img src="{% static 'img/amir.jpg' %}" title="" alt="">
+            </div>
+            <h6>امیرحسین شیرازی هستم</h6>
+        </div>
+        <ul class="nav social-link">
+            <li>
+                <a target="_blank" rel="noopener" href="https://github.com/shirazidev"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+                <a target="_blank" rel="noopener" href="https://instagram.com/amirhossein_shirazi"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/amirhossein-shirazi/"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a href="tg://resolve?domain=shirazidev"><i class="fab fa-telegram-plane"></i></a>
+            </li>
+        </ul>
+        <p class="copyright">© کپی رایت 1402, تمامی حقوق نزد امیرحسین شیرازی محفوظ است.</p>
+    </div>
+</footer>
+<!-- End Footer -->
+{% include 'includes/footer_tags.html' %}
+<!-- end -->
+</body>
+<!-- Body End -->
+
+</html>

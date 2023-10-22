@@ -1,0 +1,14 @@
+{
+  "platform": "django",
+  "app": "shirazidev",
+  "disks": [
+    {
+      "name": "sqlite",
+      "mountTo": "data"
+    },
+    {
+      "name": "media",
+      "mountTo": "media"
+    }
+  ]
+}
