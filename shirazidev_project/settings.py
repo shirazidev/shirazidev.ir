@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     # my apps
     'services_app.apps.ServicesAppConfig',
     'project_app.apps.ProjectAppConfig',
-    'contactus_app.apps.ContactusAppConfig'
+    'contactus_app.apps.ContactusAppConfig',
+    'visitor_counter.apps.VisitorCounterConfig',
 
 ]
 
@@ -124,7 +125,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_DIRS = [
     BASE_DIR / "assets",
 ]
-STATIC_ROOT = "/var/www/shirazidev.ir/assets/"
+STATIC_ROOT = "static_root"
 
 handler404 = 'shirazidev_project.views.c404'
 
