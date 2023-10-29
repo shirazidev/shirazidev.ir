@@ -71,6 +71,14 @@
                     </a>
                 </li>
                 <li>
+                    <a href="#">
+                            <span class="m-icon">
+                                <i class="bi-telephone"></i>
+                            </span>
+                        <span style="color: paleturquoise" class="m-text">{{ request.user.first_name }} جان، خوش آمدید.</span>
+                    </a>
+                </li>
+                <li>
                     <a href="/login/logout">
                             <span class="m-icon">
                                 <i class="bi-telephone"></i>
@@ -79,6 +87,14 @@
                     </a>
                 </li>
             {% elif request.user.is_authenticated %}
+                <li>
+                    <a href="#">
+                            <span class="m-icon">
+                                <i class="bi-telephone"></i>
+                            </span>
+                        <span style="color: paleturquoise" class="m-text">{{ request.user.first_name }} جان، خوش آمدید.</span>
+                    </a>
+                </li>
                 <li>
                     <a href="/login/logout">
                             <span class="m-icon">
