@@ -11,9 +11,10 @@ def home(request):
     if request.method == "POST":
         name = request.POST.get('name')
         email = request.POST.get('email')
+        Phone = request.POST.get('Phone')
         subject = request.POST.get('subject')
         text = request.POST.get('text')
-        Contact.objects.create(name=name, email=email, subject=subject, text=text)
+        Contact.objects.create(name=name, email=email, Phone=Phone, subject=subject, text=text)
     visitor, created = Visitor.objects.get_or_create(id=1)
     if not created:
         visitor.count += 1

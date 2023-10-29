@@ -481,16 +481,23 @@
                             <div class="row gx-3 gy-4">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label class="form-label">اسم کوچک</label>
+                                        <label class="form-label">نام</label>
                                         <input name="name" id="name" placeholder="اسم *" class="form-control"
-                                               type="text">
+                                               type="text" maxlength="30" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label">ایمیل شما</label>
                                         <input name="email" id="email" placeholder="ایمیل *" class="form-control"
-                                               type="email">
+                                               type="email" maxlength="254" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label">موبایل شما</label>
+                                        <input name="Phone" id="Phone" placeholder="+989123456789" class="form-control"
+                                               type="number" maxlength="17">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -498,14 +505,14 @@
                                         <label class="form-label">موضوع</label>
                                         <input name="subject" id="subject" placeholder="موضوع *"
                                                class="form-control"
-                                               type="text">
+                                               type="text" maxlength="30" required>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
                                         <label class="form-label">پیام شما</label>
                                         <textarea name="text" id="message" placeholder="پیام شما *" rows="4"
-                                                  class="form-control"></textarea>
+                                                  class="form-control" required></textarea>
                                     </div>
                                 </div>
                                 <div class="col-md-12">
