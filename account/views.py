@@ -17,3 +17,8 @@ def user_login(request):
     else:
         pass
     return render(request, 'account/index.html')
+
+
+def user_logout(request):
+    logout(request)
+    return render(request, 'account/logout.html')

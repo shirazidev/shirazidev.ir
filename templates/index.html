@@ -61,6 +61,39 @@
                     <span class="m-text">تماس با ما</span>
                 </a>
             </li>
+            {% if request.user.is_staff %}
+                <li>
+                    <a href="/panels/admin/main/">
+                            <span class="m-icon">
+                                <i class="bi-telephone"></i>
+                            </span>
+                        <span class="m-text">پنل ادمین</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/login/logout">
+                            <span class="m-icon">
+                                <i class="bi-telephone"></i>
+                            </span>
+                        <span style="color: red" class="m-text">خروج</span>
+                    </a>
+                </li>
+            {% elif request.user.is_authenticated %}
+                <li>
+                    <a href="/login/logout">
+                            <span class="m-icon">
+                                <i class="bi-telephone"></i>
+                            </span>
+                        <span style="color: red" class="m-text">خروج</span>
+                    </a>
+                </li>
+            {% else %}
+                <li>
+                    <a href="/login/">
+                        <span class="m-text">ورود به سیستم</span>
+                    </a>
+                </li>
+            {% endif %}
         </ul>
         <!-- Top Menu -->
         <div class="d-flex">
