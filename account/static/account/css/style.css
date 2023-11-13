@@ -8216,7 +8216,7 @@ h1, h2, h3, h4, h5,
 .field-icon {
   position: absolute;
   top: 50%;
-  right: 15px;
+  left: 15px;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
