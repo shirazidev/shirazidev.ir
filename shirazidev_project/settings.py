@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'contactus_app.apps.ContactusAppConfig',
     'visitor_counter.apps.VisitorCounterConfig',
     'account.apps.AccountConfig',
+    'work.apps.WorkConfig',
 ]
 
 MIDDLEWARE = [

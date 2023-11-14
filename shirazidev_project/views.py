@@ -3,9 +3,12 @@ from services_app.models import Service
 from project_app.models import Project
 from contactus_app.models import Contact
 from visitor_counter.models import Visitor
+from work.models import Work
+
 
 def c404(request):
     return render(request, '404.html', status=404)
+
 
 def home(request):
     if request.method == "POST":
@@ -23,5 +26,6 @@ def home(request):
     visitors = visitor.count
     services = Service.objects.all()
     projects = Project.objects.all()
-
-    return render(request, 'index.html', {'services': services, 'projects': projects,'visitors': visitors})
+    work = Work.objects.all()
+    return render(request, 'index.html',
+                  {'services': services, 'projects': projects, 'visitors': visitors, 'works': work})

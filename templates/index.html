@@ -236,14 +236,16 @@
                             </div>
                             <div class="resume-box">
                                 <ul>
-                                    <li>
+                                    {% for work in works %}
+                                        <li>
                                         <div class="icon">
                                             <i class="fas fa-briefcase"></i>
                                         </div>
-                                        <span class="time">1402 - زمان حال</span>
-                                        <h5>برنامه نویسی به صورت FreeLancing</h5>
-                                        <p>کار با افراد مختلف و متخصص در حوزه های مختلف در داخل و خارج از کشور.</p>
+                                        <span class="time">{{ work.tarikh }}</span>
+                                        <h5>{{ work.title }}</h5>
+                                        <p>{{ work.desc }}</p>
                                     </li>
+                                    {% endfor %}
                                 </ul>
                         </div>
                     </div>
