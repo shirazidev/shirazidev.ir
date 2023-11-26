@@ -44,6 +44,10 @@ INSTALLED_APPS = [
     'visitor_counter.apps.VisitorCounterConfig',
     'account.apps.AccountConfig',
     'work.apps.WorkConfig',
+    'footerprofile.apps.FooterprofileConfig',
+
+    #extention apps
+    'django_cleanup.apps.CleanupConfig',
 ]
 
 MIDDLEWARE = [

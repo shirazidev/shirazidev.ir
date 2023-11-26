@@ -4,6 +4,7 @@ from project_app.models import Project
 from contactus_app.models import Contact
 from visitor_counter.models import Visitor
 from work.models import Work
+from footerprofile.models import Person
 
 
 def c404(request):
@@ -27,5 +28,6 @@ def home(request):
     services = Service.objects.all()
     projects = Project.objects.all()
     work = Work.objects.all()
+    person = Person.objects.get(pk=1)
     return render(request, 'index.html',
-                  {'services': services, 'projects': projects, 'visitors': visitors, 'works': work})
+                  {'services': services, 'projects': projects, 'visitors': visitors, 'works': work, 'person': person})
