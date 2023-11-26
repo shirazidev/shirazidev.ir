@@ -29,5 +29,6 @@ def home(request):
     projects = Project.objects.all()
     work = Work.objects.all()
     person = Person.objects.get(pk=1)
+    homephoto = Person.objects.get(pk=2)
     return render(request, 'index.html',
-                  {'services': services, 'projects': projects, 'visitors': visitors, 'works': work, 'person': person})
+                  {'services': services, 'projects': projects, 'visitors': visitors, 'works': work, 'person': person, 'homephoto': homephoto})

@@ -829,7 +829,7 @@ a {
   margin-bottom: 25px;
   font-size: 25px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 546px) {
   .home-section .home-intro h2 {
     margin-bottom: 20px;
     font-size: 22px;
@@ -838,7 +838,7 @@ a {
 .home-section .home-intro p {
   font-size: 17px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 546px) {
   .home-section .home-intro p {
     font-size: 15px;
   }
