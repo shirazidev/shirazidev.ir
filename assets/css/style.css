@@ -874,7 +874,7 @@ a {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 150px 150px 10px 150px;
+  border-radius: 20px 20px 20px 20px;
 }
 .home-section-02 .home-image-02 img {
   border-radius: 10px 150px 150px 150px;
