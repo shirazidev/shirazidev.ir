@@ -48,7 +48,7 @@ INSTALLED_APPS = [
 
     #extention apps
     'django_cleanup.apps.CleanupConfig',
-    'import_export'
+    'import_export',
 ]
 
 MIDDLEWARE = [
