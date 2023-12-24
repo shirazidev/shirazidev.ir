@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-g0mmz0e$c+sxi#v4ikd1)gu)8l(%z+$ss)#%y(63w=d0h=(vl='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['https://shirazidev.ir']
+# ALLOWED_HOSTS = ['https://shirazidev.ir']
 
 # Application definition
 
@@ -113,9 +113,11 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'fa'
+DATETIME_FORMAT = 'j F Y H:i:s'
+DATE_FORMAT = 'j F Y'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Tehran'
 
 USE_I18N = True
 
