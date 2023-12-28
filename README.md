@@ -1,2 +1,2 @@
 # shirazidev.ir
-Django Css Scss Bootstrap Javascript JQuery self CV website
+Django Css Scss Bootstrap Javascript JQuery self CV Website
