@@ -24,13 +24,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-g0mmz0e$c+sxi#v4ikd1)gu)8l(%z+$ss)#%y(63w=d0h=(vl='
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-# ALLOWED_HOSTS = ['https://shirazidev.ir']
+ALLOWED_HOSTS = ['https://shirazidev.ir']
 
 # Application definition
 
 INSTALLED_APPS = [
+    "admin_persian",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
