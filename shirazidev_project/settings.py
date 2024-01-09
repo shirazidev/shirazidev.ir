@@ -47,7 +47,7 @@ INSTALLED_APPS = [
     'work.apps.WorkConfig',
     'footerprofile.apps.FooterprofileConfig',
 
-    #extention apps
+    # extention apps
     'django_cleanup.apps.CleanupConfig',
     'import_export',
 ]
