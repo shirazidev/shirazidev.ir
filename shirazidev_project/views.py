@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from services_app.models import Service
 from project_app.models import Project
+from project_app.models import Navbar
 from contactus_app.models import Contact
 from visitor_counter.models import Visitor
 from work.models import Work
@@ -27,8 +28,9 @@ def home(request):
     visitors = visitor.count
     services = Service.objects.all()
     projects = Project.objects.all()
+    navbar = Navbar.objects.all()
     work = Work.objects.all()
     person = Person.objects.get(pk=1)
     homephoto = Person.objects.get(pk=2)
     return render(request, 'index.html',
-                  {'services': services, 'projects': projects, 'visitors': visitors, 'works': work, 'person': person, 'homephoto': homephoto})
+                  {'services': services, 'projects': projects, 'visitors': visitors, 'works': work, 'person': person, 'homephoto': homephoto, 'navbar': navbar})

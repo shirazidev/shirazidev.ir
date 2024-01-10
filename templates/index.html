@@ -282,39 +282,17 @@
                                     <span>مهارت ها</span>
                                 </div>
                                 <div class="skills">
+                                    {% for item in navbar %}
                                     <div class="skill-lt">
-                                        <h6 class="dark-color">Django</h6>
+                                        <h6 class="dark-color">{{ item.title }}</h6>
                                         <div class="skill-bar">
-                                            <div class="skill-bar-in" role="progressbar" aria-valuenow="92"
+                                            <div class="skill-bar-in" role="progressbar" aria-valuenow="{{ item.nav }}"
                                                  aria-valuemin="0" aria-valuemax="100">
-                                                <span>92%</span>
+                                                <span>{{ item.nav }}%</span>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="skill-lt">
-                                        <h6 class="dark-color">HTML/CSS</h6>
-                                        <div class="skill-bar">
-                                            <div class="skill-bar-in" role="progressbar" aria-valuenow="52"
-                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <span>52%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-lt">
-                                        <h6 class="dark-color">UI/UX</h6>
-                                        <div class="skill-bar">
-                                            <div class="skill-bar-in" role="progressbar" aria-valuenow="15"
-                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <span>15%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="skill-lt">
-                                        <h6 class="dark-color">وردپرس</h6>
-                                        <div class="skill-bar">
-                                            <div class="skill-bar-in" role="progressbar" aria-valuenow="91"
-                                                 aria-valuemin="0" aria-valuemax="100">
-                                                <span>91%</span>
+                                    {% endfor %}
                                             </div>
                                         </div>
                                     </div>
@@ -322,9 +300,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
     </section>
     <!-- End About -->
     <!-- Services -->
