@@ -1740,3 +1740,10 @@ a {
 /*.grid-item:nth-child(3n) {*/
 /*    margin-right: 0;*/
 /*}*/
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+}
